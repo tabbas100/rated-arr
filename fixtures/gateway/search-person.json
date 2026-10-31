@@ -1,0 +1,96 @@
+{
+    "films": [],
+    "shows": [],
+    "people": [
+        {
+            "name": "Steven Seagal",
+            "directing": false,
+            "films": [
+                {
+                    "kind": "film",
+                    "id": 23631,
+                    "title": "Machete",
+                    "year": 2010,
+                    "overview": "After being set-up and betrayed by the man who hired him to assassinate a Texas Senator, an ex-Federale launches a brutal rampage of revenge against his former boss.",
+                    "poster": "https://image.tmdb.org/t/p/w342/dcPSm1rGEFdiEc7DaKz0t5kb66b.jpg",
+                    "fanart": "https://image.tmdb.org/t/p/w1280/wbjoD8BN5W9VusuLJYdd7tWUxqh.jpg",
+                    "runtime": 0,
+                    "genres": "Action, Comedy, Thriller",
+                    "rating": 6.3,
+                    "network": "",
+                    "seasons": 0,
+                    "inLibrary": false,
+                    "downloaded": false
+                },
+                {
+                    "kind": "film",
+                    "id": 8845,
+                    "title": "Under Siege",
+                    "year": 1992,
+                    "overview": "A disgruntled ex-CIA operative, his assistant and their assembled group of terrorists seize a battleship with nuclear blackmail in mind. They've planned for every contingency but ignore the ship's cook, former Navy SEAL Casey Ryback\u2014an error that could be fatal.",
+                    "poster": "https://image.tmdb.org/t/p/w342/7tzVzgGKhLsQoiyDh2tiGcPeTpH.jpg",
+                    "fanart": "https://image.tmdb.org/t/p/w1280/ihBDaN7OwT7D9DVri8SmxCnuRLB.jpg",
+                    "runtime": 0,
+                    "genres": "Action, Thriller",
+                    "rating": 6.3,
+                    "network": "",
+                    "seasons": 0,
+                    "inLibrary": false,
+                    "downloaded": false
+                },
+                {
+                    "kind": "film",
+                    "id": 2320,
+                    "title": "Executive Decision",
+                    "year": 1996,
+                    "overview": "Terrorists hijack a 747 inbound to Washington D.C., demanding the release of their imprisoned leader. Intelligence expert David Grant suspects another reason and he is soon the reluctant member of a special assault team that is assigned to intercept the plane and hijackers.",
+                    "poster": "https://image.tmdb.org/t/p/w342/hLjXkFr9fHlWzRVwu1T31QSVHRq.jpg",
+                    "fanart": "https://image.tmdb.org/t/p/w1280/ct9dN0QUh5SMAexvyQ9IaA7HpOP.jpg",
+                    "runtime": 0,
+                    "genres": "Action, Adventure, Drama",
+                    "rating": 6.3,
+                    "network": "",
+                    "seasons": 0,
+                    "inLibrary": true,
+                    "downloaded": true
+                }
+            ],
+            "shows": [
+                {
+                    "kind": "show",
+                    "id": 248298,
+                    "title": "True Justice",
+                    "year": 2011,
+                    "overview": "Elijah Kane leads a hardcore undercover team of Seattle based cops who take on the local criminal element with a high-octane style of enforcement.",
+                    "poster": "https://image.tmdb.org/t/p/w342/pbbqoF5tQXxIp4AvV2NnfMLJZe7.jpg",
+                    "fanart": "https://image.tmdb.org/t/p/w1280/mIEqbBv3f1hCaslJnetvWi3k1us.jpg",
+                    "runtime": 0,
+                    "genres": "Crime, Action & Adventure, Drama",
+                    "rating": 5.8,
+                    "network": "5USA",
+                    "seasons": 2,
+                    "inLibrary": false,
+                    "downloaded": false
+                },
+                {
+                    "kind": "show",
+                    "id": 126841,
+                    "title": "Steven Seagal: Lawman",
+                    "year": 2009,
+                    "overview": "Steven Seagal: Lawman is an American reality television series on the A&E Network which stars actor and martial artist Steven Seagal performing his duties as a reserve deputy sheriff in Jefferson Parish, Louisiana. It premiered on December 2, 2009.\n\n\"I've been working as an officer in Jefferson Parish for two decades under most people's radar\", said Seagal in the premiere episode, \"The Way of the Gun\". \"I've decided to work with A&E on this series now, because I believe it's important to show the nation all the positive work being accomplished here in Louisiana\u2014to see the passion and commitment that comes from the Jefferson Parish Sheriff's Office in this post-Katrina environment.\" Seagal's current rank of Reserve Deputy Chief is largely ceremonial.",
+                    "poster": "https://image.tmdb.org/t/p/w342/z5g4bBKjarJ92CI6017mEWQmCtO.jpg",
+                    "fanart": "https://image.tmdb.org/t/p/w1280/aZ5PU74b98MumDxgf24gVECLDW6.jpg",
+                    "runtime": 22,
+                    "genres": "Documentary, Reality, Crime",
+                    "rating": 5.4,
+                    "network": "A&E",
+                    "seasons": 3,
+                    "inLibrary": true,
+                    "downloaded": false
+                }
+            ],
+            "named": true
+        }
+    ],
+    "unavailable": []
+}

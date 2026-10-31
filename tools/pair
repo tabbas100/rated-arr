@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+# Pairs a TV with the Fetch gateway: the TV shows a code, you confirm it here. Approval runs over
+# your SSH key, so only someone who can log in to the Whatbox can pair a TV.
+#
+#   tools/pair                 approve the code on the TV
+#   tools/pair devices         list paired TVs
+#   tools/pair revoke <id>     unpair a TV; its token stops working at once
+set -euo pipefail
+
+cd "$(dirname "$0")/.."
+TARGET="$(grep '^ssh.target=' fetch.properties | cut -d= -f2-)"
+fetchd() { ssh "$TARGET" "cd fetch && PYTHONPATH=\$HOME/fetch python3 -P -s -m fetchd $*"; }
+
+case "${1:-}" in
+  devices) fetchd devices; exit ;;
+  revoke) [[ "${2:-}" =~ ^[0-9a-f]{8}$ ]] || { echo "Usage: tools/pair revoke <8-character id>" >&2; exit 2; }
+          fetchd revoke "$2"; exit ;;
+  "") ;;
+  *) echo "Usage: tools/pair [devices | revoke <id>]" >&2; exit 2 ;;
+esac
+
+waiting="$(fetchd pending)"
+echo "$waiting"
+grep -qE '^[A-Z0-9]{3}-[A-Z0-9]{3} ' <<< "$waiting" || exit 0
+read -r -p "Type the code shown on the TV: " code
+code="$(tr '[:lower:]' '[:upper:]' <<< "$code" | tr -cd 'A-Z0-9-')"
+[[ "$code" =~ ^[A-Z0-9]{3}-?[A-Z0-9]{3}$ ]] || { echo "That doesn't look like a code." >&2; exit 1; }
+fetchd approve "$code"

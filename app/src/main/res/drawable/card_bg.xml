@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Download cards and picker rows: square and ink-outlined; focused, outlined in red on a hard ink shadow. -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="true">
+        <layer-list>
+            <item android:left="4dp" android:top="4dp">
+                <shape android:shape="rectangle">
+                    <solid android:color="@color/text" />
+                </shape>
+            </item>
+            <item android:right="4dp" android:bottom="4dp">
+                <shape android:shape="rectangle">
+                    <solid android:color="@color/surface_raised" />
+                    <stroke android:width="3dp" android:color="@color/focus" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/glass" />
+            <stroke android:width="2dp" android:color="@color/line" />
+        </shape>
+    </item>
+</selector>

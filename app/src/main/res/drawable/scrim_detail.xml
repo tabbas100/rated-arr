@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Fades the backdrop into the paper behind the text: strongly on the left, and towards the bottom. -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <gradient android:angle="0" android:startColor="#F2E9DCC0" android:centerColor="#BFE9DCC0" android:endColor="#4DE9DCC0" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <gradient android:angle="90" android:startColor="@color/scrim" android:endColor="#00E9DCC0" />
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Ink-outlined at rest; focused, a red block lifted up and left off a hard ink shadow. -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false">
+        <shape android:shape="rectangle">
+            <corners android:radius="2dp" />
+            <solid android:color="@color/glass" />
+            <stroke android:width="2dp" android:color="@color/line" />
+        </shape>
+    </item>
+    <item android:state_focused="true">
+        <layer-list>
+            <item android:left="4dp" android:top="4dp">
+                <shape android:shape="rectangle">
+                    <corners android:radius="2dp" />
+                    <solid android:color="@color/text" />
+                </shape>
+            </item>
+            <item android:right="4dp" android:bottom="4dp">
+                <shape android:shape="rectangle">
+                    <corners android:radius="2dp" />
+                    <solid android:color="@color/focus" />
+                    <stroke android:width="2dp" android:color="@color/text" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="2dp" />
+            <solid android:color="@color/glass" />
+            <stroke android:width="2dp" android:color="@color/text" />
+        </shape>
+    </item>
+</selector>

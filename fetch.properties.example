@@ -1,0 +1,13 @@
+# Copy to fetch.properties and fill in. Nothing here is secret: the TV pairs with the gateway and gets
+# its own token, and no Sonarr, Radarr, Plex or TMDB key is ever built into the app or copied off the
+# seedbox. fetch.properties stays out of git.
+
+# The gateway's HTTPS address: on Whatbox, a domain from the Domain page pointing at gateway.port.
+gateway.url=https://fetch.<your-username>.box.ca
+
+# Where the gateway runs; tools/deploy-gateway.sh and tools/pair use these over SSH (key login).
+ssh.target=<your-username>@<your-server>.whatbox.ca
+# A free port on the seedbox for the gateway, which listens on 127.0.0.1 only.
+gateway.port=<port>
+# Plex Media Server's port on the seedbox, for Continue Watching; leave empty without Plex.
+plex.port=<port>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The genre chips on Films and Shows: For you, then the genres; the chosen one is highlighted. -->
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="14dp"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:paddingStart="52dp"
+    android:paddingTop="4dp"
+    android:paddingEnd="52dp"
+    android:paddingBottom="4dp"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:id="@+id/chipRow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        android:orientation="horizontal" />
+</HorizontalScrollView>

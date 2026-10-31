@@ -1,0 +1,38 @@
+{
+    "tagline": "Two good cops. One bad situation.",
+    "overview": "A former government operative renowned for his stealth, Jack Cole is now a Los Angeles police detective. When a series of horrible murders occurs in the metro area, Cole is assigned to the case, along with tough-talking fellow cop Jim Campbell. Although the two men clash, they gradually become effective partners as they uncover a conspiracy linked to the killings, which also involves terrorism and organized crime.",
+    "runtime": 92,
+    "rating": 5.4,
+    "votes": 454,
+    "makersRole": "Director",
+    "makers": [
+        "John Gray"
+    ],
+    "cast": [
+        {
+            "name": "Steven Seagal",
+            "character": "Jack Cole",
+            "photo": "https://image.tmdb.org/t/p/w185/fGNIEpn3JqOckY3ahnJX9x3qA94.jpg"
+        },
+        {
+            "name": "Keenen Ivory Wayans",
+            "character": "Jim Campbell",
+            "photo": "https://image.tmdb.org/t/p/w185/e9XRdXolDV8RjGPHPXH6IISDTSP.jpg"
+        },
+        {
+            "name": "Bob Gunton",
+            "character": "Frank Deverell",
+            "photo": "https://image.tmdb.org/t/p/w185/ulbVvuBToBN3aCGcV028hwO0MOP.jpg"
+        },
+        {
+            "name": "Brian Cox",
+            "character": "Mr. Smith",
+            "photo": "https://image.tmdb.org/t/p/w185/scSjbFCTRngXlkJRoKptM5kQGw7.jpg"
+        },
+        {
+            "name": "John M. Jackson",
+            "character": "Donald",
+            "photo": "https://image.tmdb.org/t/p/w185/8RlhL3X2ygxJN4Po72aKLor55kd.jpg"
+        }
+    ]
+}

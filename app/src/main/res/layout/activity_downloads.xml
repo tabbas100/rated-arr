@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Everything downloading for one title: the poster and summary on the left, one row per download on the right. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:clipChildren="false"
+    android:orientation="horizontal"
+    android:paddingStart="64dp"
+    android:paddingTop="48dp"
+    android:paddingEnd="64dp"
+    android:paddingBottom="24dp">
+
+    <LinearLayout
+        android:layout_width="208dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/posterFrame"
+            android:layout_width="208dp"
+            android:layout_height="312dp"
+            android:background="@drawable/poster_placeholder">
+
+            <TextView
+                android:id="@+id/initials"
+                style="@style/Text"
+                android:layout_gravity="center"
+                android:textFontWeight="300"
+                android:textColor="@color/text_faint"
+                android:textSize="64sp" />
+
+            <ImageView
+                android:id="@+id/poster"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@null"
+                android:scaleType="centerCrop" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/Text.Title"
+            android:layout_marginTop="16dp"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/summary"
+            style="@style/Text"
+            android:layout_marginTop="6dp"
+            android:textColor="@color/accent"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="44dp"
+        android:layout_weight="1"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:paddingStart="4dp"
+        android:paddingTop="4dp"
+        android:paddingEnd="4dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/rows"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipChildren="false"
+            android:orientation="vertical" />
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rated Arr UI Kit</title>
+<style>
+  body { margin: 0; padding: 32px 16px 64px; background: #101014; color: #f2f2f2; font: 15px/1.5 system-ui, sans-serif; }
+  main { max-width: 1040px; margin: 0 auto; }
+  h1 { font-size: 30px; font-weight: 600; margin: 0 0 6px; }
+  h2 { font-size: 13px; letter-spacing: .12em; text-transform: uppercase; color: #9a9aa6; margin: 40px 0 0; }
+  h3 { font-size: 17px; margin: 18px 0 2px; }
+  p { margin: 0 0 10px; color: #c4c4cc; }
+  a { color: #f2f2f2; }
+  iframe { width: 100%; border: 0; border-radius: 10px; display: block; background: #000; }
+  .themes { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 14px; }
+  .themes button { font: 600 13px system-ui, sans-serif; height: 34px; padding: 0 16px; border-radius: 17px; border: 0;
+    cursor: pointer; background: #2a2a33; color: #f2f2f2; }
+  .themes button[aria-pressed="true"] { background: #f2f2f2; color: #101014; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Rated Arr UI Kit</h1>
+  <p>Every part of the app, in each theme. Sizes are dp: 1px here is 1dp on the TV's 960 × 540 screen.
+  Rules and sources are in <a href="README.md">README.md</a>.</p>
+  <div class="themes" role="group" aria-label="Theme"><button data-theme-id="grindhouse">Grindhouse</button><button data-theme-id="fetch">Classic</button><button data-theme-id="rewind">Rewind</button><button data-theme-id="teletext">Teletext</button></div>
+  <h2>Overview</h2>
+  <section><h3>Cover</h3><p></p><iframe data-src="components/Cover/preview.html" style="height:312px" title="Cover"></iframe></section>
+  <h2>Actions</h2>
+  <section><h3>Button</h3><p>Primary, quiet and destructive <a href="components/Button/README.md">Notes</a></p><iframe data-src="components/Button/preview.html" style="height:174px" title="Button"></iframe></section>
+  <section><h3>Chip</h3><p>Genre filters <a href="components/Chip/README.md">Notes</a></p><iframe data-src="components/Chip/preview.html" style="height:128px" title="Chip"></iframe></section>
+  <section><h3>SearchField</h3><p>Resting and typing <a href="components/SearchField/README.md">Notes</a></p><iframe data-src="components/SearchField/preview.html" style="height:194px" title="SearchField"></iframe></section>
+  <section><h3>Tab</h3><p>Films, Shows, Library <a href="components/Tab/README.md">Notes</a></p><iframe data-src="components/Tab/preview.html" style="height:128px" title="Tab"></iframe></section>
+  <h2>Brand</h2>
+  <section><h3>Logo</h3><p>Launcher banner and icon <a href="components/Logo/README.md">Notes</a></p><iframe data-src="components/Logo/preview.html" style="height:444px" title="Logo"></iframe></section>
+  <h2>Cards</h2>
+  <section><h3>DownloadCard</h3><p>Downloading and stalled <a href="components/DownloadCard/README.md">Notes</a></p><iframe data-src="components/DownloadCard/preview.html" style="height:274px" title="DownloadCard"></iframe></section>
+  <section><h3>PersonCard</h3><p>Cast on a title page <a href="components/PersonCard/README.md">Notes</a></p><iframe data-src="components/PersonCard/preview.html" style="height:224px" title="PersonCard"></iframe></section>
+  <section><h3>PosterCard</h3><p>Placeholder, downloaded, focused <a href="components/PosterCard/README.md">Notes</a></p><iframe data-src="components/PosterCard/preview.html" style="height:354px" title="PosterCard"></iframe></section>
+  <h2>Layout</h2>
+  <section><h3>SectionHeader</h3><p>Row titles and notes <a href="components/SectionHeader/README.md">Notes</a></p><iframe data-src="components/SectionHeader/preview.html" style="height:174px" title="SectionHeader"></iframe></section>
+  <h2>Lists</h2>
+  <section><h3>PickRow</h3><p>Episode picker rows <a href="components/PickRow/README.md">Notes</a></p><iframe data-src="components/PickRow/preview.html" style="height:314px" title="PickRow"></iframe></section>
+  <h2>Overlays</h2>
+  <section><h3>ConfirmDialog</h3><p>Before anything is deleted <a href="components/ConfirmDialog/README.md">Notes</a></p><iframe data-src="components/ConfirmDialog/preview.html" style="height:344px" title="ConfirmDialog"></iframe></section>
+  <h2>Screens</h2>
+  <section><h3>HomeScreen</h3><p>Films tab with So bad it&#x27;s good chosen <a href="components/HomeScreen/README.md">Notes</a></p><iframe data-src="components/HomeScreen/preview.html" style="height:564px" title="HomeScreen"></iframe></section>
+  <h2>Status</h2>
+  <section><h3>ProgressBar</h3><p>Download progress and disk space <a href="components/ProgressBar/README.md">Notes</a></p><iframe data-src="components/ProgressBar/preview.html" style="height:234px" title="ProgressBar"></iframe></section>
+  <section><h3>StatusIcons</h3><p>Have and pick marks <a href="components/StatusIcons/README.md">Notes</a></p><iframe data-src="components/StatusIcons/preview.html" style="height:164px" title="StatusIcons"></iframe></section>
+  <section><h3>StatusPill</h3><p>Library state on a title page <a href="components/StatusPill/README.md">Notes</a></p><iframe data-src="components/StatusPill/preview.html" style="height:120px" title="StatusPill"></iframe></section>
+</main>
+<script>
+  function remembered() {
+    try { return localStorage.getItem("rated-arr-kit-theme") || "grindhouse"; } catch (e) { return "grindhouse"; }
+  }
+  function show(theme) {
+    try { localStorage.setItem("rated-arr-kit-theme", theme); } catch (e) {}
+    document.querySelectorAll(".themes button").forEach(function (b) { b.setAttribute("aria-pressed", b.dataset.themeId === theme); });
+    document.querySelectorAll("iframe").forEach(function (f) { f.src = f.dataset.src + "?theme=" + theme; });
+  }
+  document.querySelectorAll(".themes button").forEach(function (b) { b.addEventListener("click", function () { show(b.dataset.themeId); }); });
+  show(remembered());
+</script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- A destructive action (delete, remove): red text, kept on its own row below the normal buttons. -->
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Button"
+    android:layout_height="40dp"
+    android:paddingStart="18dp"
+    android:paddingEnd="18dp"
+    android:textColor="@color/danger_text"
+    android:textSize="14sp" />

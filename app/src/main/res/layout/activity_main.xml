@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Search on top; below it the results (Films, Shows) or, with no search, Downloading and Recently added. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="32dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="56dp"
+        android:paddingEnd="56dp">
+
+        <TextView
+            style="@style/Text.Wordmark"
+            android:text="@string/app_name" />
+
+        <EditText
+            android:id="@+id/search"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="36dp"
+            android:layout_weight="1"
+            android:background="@drawable/search_pill"
+            android:drawableStart="@drawable/ic_search"
+            android:drawablePadding="12dp"
+            android:drawableTint="@color/text_dim"
+            android:fontFamily="@font/outfit_family"
+            android:hint="@string/search_hint"
+            android:imeOptions="actionSearch|flagNoExtractUi"
+            android:importantForAutofill="no"
+            android:inputType="text|textNoSuggestions"
+            android:maxLength="100"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:singleLine="true"
+            android:textColor="@color/text"
+            android:textColorHint="@color/text_faint"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <com.androidtv.fetch.ui.TabBar
+        android:id="@+id/tabs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tabFilms"
+            style="@style/Tab"
+            android:text="@string/section_films" />
+
+        <TextView
+            android:id="@+id/tabShows"
+            style="@style/Tab"
+            android:text="@string/section_shows" />
+
+        <TextView
+            android:id="@+id/tabLibrary"
+            style="@style/Tab"
+            android:text="@string/tab_library" />
+    </com.androidtv.fetch.ui.TabBar>
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="12dp"
+        android:layout_weight="1"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:paddingBottom="32dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/sections"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipChildren="false"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/message"
+                style="@style/Text.Message"
+                android:layout_width="match_parent"
+                android:layout_marginTop="120dp"
+                android:paddingStart="96dp"
+                android:paddingEnd="96dp"
+                android:visibility="gone" />
+
+            <ProgressBar
+                android:id="@+id/spinner"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:indeterminateTint="@color/text_dim"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

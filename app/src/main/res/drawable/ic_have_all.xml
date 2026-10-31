@@ -1,0 +1,7 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="18dp" android:height="18dp" android:viewportWidth="24" android:viewportHeight="24">
+    <!-- Downloaded: a green disc with a tick. -->
+    <path android:fillColor="@color/ready" android:pathData="M12,12m-11,0a11,11 0,1 1,22 0a11,11 0,1 1,-22 0" />
+    <path android:pathData="M6.8,12.4l3.4,3.4L17.4,8.6" android:strokeColor="@color/on_ready" android:strokeWidth="2.8"
+        android:strokeLineCap="round" android:strokeLineJoin="round" />
+</vector>

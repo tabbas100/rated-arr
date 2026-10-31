@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Grindhouse: ink on aged newsprint, with one red for focus. Names follow the Fetch UI kit's tokens. -->
+<resources>
+    <color name="screen">#FFE9DCC0</color>
+    <color name="screen_top">#FFF3EAD6</color>
+    <color name="glow">#1FC1121F</color>
+    <color name="surface">#FFD9C8A4</color>
+    <color name="surface_raised">#FFF6EEDB</color>
+    <color name="glass">#121A110C</color>
+    <color name="glass_selected">#261A110C</color>
+    <color name="line">#591A110C</color>
+    <color name="scrim">#E0E9DCC0</color>
+
+    <color name="text">#FF1A110C</color>
+    <color name="text_dim">#FF4A3A2C</color>
+    <color name="text_faint">#FF5F4A36</color>
+
+    <color name="focus">#FFC1121F</color>
+    <color name="on_focus">#FFF6EEDB</color>
+    <color name="accent">#FF9A520A</color>
+    <color name="on_accent">#FFFFF4DC</color>
+    <color name="ready">#FF2F6B2F</color>
+    <color name="on_ready">#FFF6EEDB</color>
+    <color name="ready_wash">#262F6B2F</color>
+    <color name="warning">#FF7A4700</color>
+    <color name="danger">#FFA10F1A</color>
+</resources>

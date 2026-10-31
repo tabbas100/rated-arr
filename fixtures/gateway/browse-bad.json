@@ -1,0 +1,166 @@
+{
+    "rows": [
+        {
+            "id": "soBad",
+            "source": "tmdb",
+            "items": [
+                {
+                    "kind": "film",
+                    "id": 205321,
+                    "title": "Sharknado",
+                    "year": 2013,
+                    "overview": "A freak hurricane hits Los Angeles, causing man-eating sharks to be scooped up in tornadoes and flooding the city with shark-infested seawater. Surfer and bar-owner Fin sets out with his friends Baz and Nova to rescue his estranged wife April and teenage daughter Claudia.",
+                    "poster": "https://image.tmdb.org/t/p/w342/atEmHkVFTSGRYt2PeCiziQqbZnI.jpg",
+                    "fanart": "https://image.tmdb.org/t/p/w1280/riGVdQS9gXy38VoSaXXBhmR6A4h.jpg",
+                    "runtime": 0,
+                    "genres": "Action, Comedy, Horror",
+                    "rating": 3.9,
+                    "network": "",
+                    "seasons": 0,
+                    "inLibrary": false,
+                    "downloaded": false
+                },
+                {
+                    "kind": "film",
+                    "id": 17473,
+                    "title": "The Room",
+                    "year": 2003,
+                    "overview": "Johnny is a successful banker with great respect for and dedication to the people in his life, especially his future wife Lisa. The happy-go-lucky guy sees his world being torn apart when his friends begin to betray him one-by-one.",
+                    "poster": "https://image.tmdb.org/t/p/w342/9QscHN4pXj6Ja1k7e1ZT4vWDGnr.jpg",
+                    "fanart": "https://image.tmdb.org/t/p/w1280/6OnOH5FIp0ZJQgPlu0ehDfXzVyp.jpg",
+                    "runtime": 0,
+                    "genres": "Drama, Romance",
+                    "rating": 4.0,
+                    "network": "",
+                    "seasons": 0,
+                    "inLibrary": false,
+                    "downloaded": false
+                },
+                {
+                    "kind": "film",
+                    "id": 17692,
+                    "title": "Jaws 3-D",
+                    "year": 1983,
+                    "overview": "A giant thirty-five-foot shark becomes trapped in a SeaWorld theme park and it's up to the sons of police chief Brody to rescue everyone.",
+                    "poster": "https://image.tmdb.org/t/p/w342/kqDXj53F9paqVGJLGfHtz7giJ3s.jpg",
+                    "fanart": "https://image.tmdb.org/t/p/w1280/qFvCT6nKMGGDBHaKw0XV1061VWH.jpg",
+                    "runtime": 0,
+                    "genres": "Thriller, Horror",
+                    "rating": 4.5,
+                    "network": "",
+                    "seasons": 0,
+                    "inLibrary": false,
+                    "downloaded": false
+                }
+            ]
+        },
+        {
+            "id": "bMovies",
+            "source": "tmdb",
+            "items": [
+                {
+                    "kind": "film",
+                    "id": 535581,
+                    "title": "The Dead Don't Die",
+                    "year": 2019,
+                    "overview": "In the sleepy town of Centerville, the lives of a number of interconnected characters are disrupted by the undead.",
+                    "poster": "https://image.tmdb.org/t/p/w342/ndvOjo7Nfk8ULnFLMXthPzhI62L.jpg",
+                    "fanart": "https://image.tmdb.org/t/p/w1280/cXyfAViYly0Lk2CVpEKgYbt9wKQ.jpg",
+                    "runtime": 0,
+                    "genres": "Comedy, Horror",
+                    "rating": 5.4,
+                    "network": "",
+                    "seasons": 0,
+                    "inLibrary": false,
+                    "downloaded": false
+                },
+                {
+                    "kind": "film",
+                    "id": 980078,
+                    "title": "Winnie the Pooh: Blood and Honey",
+                    "year": 2023,
+                    "overview": "After Christopher Robin abandons them for college, Pooh and Piglet embark on a bloody rampage as they search for a new source of food.",
+                    "poster": "https://image.tmdb.org/t/p/w342/y3iPrVHicDBcx2N6eamv0jbHH6H.jpg",
+                    "fanart": "https://image.tmdb.org/t/p/w1280/jEybIB7yl3zgEdTHukaiR8b9yJp.jpg",
+                    "runtime": 0,
+                    "genres": "Horror",
+                    "rating": 4.9,
+                    "network": "",
+                    "seasons": 0,
+                    "inLibrary": false,
+                    "downloaded": false
+                },
+                {
+                    "kind": "film",
+                    "id": 94365,
+                    "title": "The Human Centipede 3 (Final Sequence)",
+                    "year": 2015,
+                    "overview": "Taking inspiration from The Human Centipede films, the warden of a notorious and troubled prison looks to create a 500-person human centipede as a solution to his problems.",
+                    "poster": "https://image.tmdb.org/t/p/w342/xUk5AGcGvybPBvvMqrDPbAFAknD.jpg",
+                    "fanart": "https://image.tmdb.org/t/p/w1280/b2AfxdTbNifN9cAH8KVqH51Y4VS.jpg",
+                    "runtime": 0,
+                    "genres": "Horror, Comedy",
+                    "rating": 3.7,
+                    "network": "",
+                    "seasons": 0,
+                    "inLibrary": false,
+                    "downloaded": false
+                }
+            ]
+        },
+        {
+            "id": "flops",
+            "source": "tmdb",
+            "items": [
+                {
+                    "kind": "film",
+                    "id": 166424,
+                    "title": "Fantastic Four",
+                    "year": 2015,
+                    "overview": "Four young outsiders teleport to a dangerous universe, which alters their physical form in shocking ways. Their lives irrevocably upended, the team must learn to harness their daunting new abilities and work together to save Earth from a former friend turned enemy.",
+                    "poster": "https://image.tmdb.org/t/p/w342/cDroz5qSlP8xZ6tOpeYoPkBvKyL.jpg",
+                    "fanart": "https://image.tmdb.org/t/p/w1280/or5kDR8Ve3TtuPSdEf1X5NdQHyz.jpg",
+                    "runtime": 0,
+                    "genres": "Action, Adventure, Science Fiction",
+                    "rating": 4.4,
+                    "network": "",
+                    "seasons": 0,
+                    "inLibrary": false,
+                    "downloaded": false
+                },
+                {
+                    "kind": "film",
+                    "id": 415,
+                    "title": "Batman & Robin",
+                    "year": 1997,
+                    "overview": "Batman and his sidekick Robin attempt to the foil the sinister schemes of a deranged set of new villains, most notably the melancholy Mr. Freeze, who wants to make Gotham City into an arctic region, and the sultry Poison Ivy, a botanical femme fatale. As the Dynamic Duo contend with these bad guys, a third hero, Batgirl, joins the ranks of the city's crime-fighters.",
+                    "poster": "https://image.tmdb.org/t/p/w342/i7hEUpDuMN2LOrCEifFyGSHZQSY.jpg",
+                    "fanart": "https://image.tmdb.org/t/p/w1280/kEuQWHte2erRpAICrYqkAZaZAAY.jpg",
+                    "runtime": 0,
+                    "genres": "Action, Science Fiction, Adventure",
+                    "rating": 4.4,
+                    "network": "",
+                    "seasons": 0,
+                    "inLibrary": false,
+                    "downloaded": false
+                },
+                {
+                    "kind": "film",
+                    "id": 351460,
+                    "title": "Death Note",
+                    "year": 2017,
+                    "overview": "Light Turner finds a supernatural notebook and uses it to mete out death, attracting the attention of a detective, a demon and a girl in his class.",
+                    "poster": "https://image.tmdb.org/t/p/w342/8xRQ0KG9ZZzjEiFa5fgEaTKhc0d.jpg",
+                    "fanart": "https://image.tmdb.org/t/p/w1280/nDAbr3NSkkOMIkFrQ3ycVxzgaMc.jpg",
+                    "runtime": 0,
+                    "genres": "Crime, Fantasy, Horror",
+                    "rating": 4.3,
+                    "network": "",
+                    "seasons": 0,
+                    "inLibrary": false,
+                    "downloaded": false
+                }
+            ]
+        }
+    ]
+}

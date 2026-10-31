@@ -1,0 +1,89 @@
+plugins {
+    id 'com.android.application'
+}
+
+// The gateway address comes from fetch.properties (release) or test-servers.local.properties
+// (debug, the gateway on this Mac). Both must be https: the app has no plain-HTTP path.
+def readProperties = { String name ->
+    def props = new Properties()
+    def f = rootProject.file(name)
+    if (f.exists()) f.withReader('UTF-8') { props.load(it) }
+    props
+}
+def gatewayUrl = { String file ->
+    def url = readProperties(file).getProperty('gateway.url', '').trim()
+    if (!url.isEmpty() && !url.startsWith('https://')) {
+        throw new GradleException("gateway.url in $file must start with https://")
+    }
+    url
+}
+
+// Release signing: a keystore outside the repo, its password in the macOS Keychain
+// (see tools/release-key.sh). Without it, release builds are refused rather than debug-signed.
+def releaseKeystore = new File(System.getProperty('user.home'), '.android-keys/fetch-release.jks')
+// Only builds that ask for a release task read the Keychain; debug builds never touch it.
+def wantsRelease = gradle.startParameter.taskNames.any { it.toLowerCase().contains('release') }
+def keychainPassword = {
+    def process = ['security', 'find-generic-password', '-s', 'fetch-release-keystore', '-w'].execute()
+    process.waitFor() == 0 ? process.text.trim() : ''
+}
+
+android {
+    namespace 'com.androidtv.fetch'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId 'com.androidtv.fetch'
+        // Android 9: the variable font weights need it, and every Google TV runs 10 or later.
+        minSdk 28
+        targetSdk 34
+        versionCode 1
+        versionName '1.0'
+    }
+
+    signingConfigs {
+        release {
+            storeFile releaseKeystore
+            keyAlias 'fetch'
+            if (wantsRelease) {
+                if (!releaseKeystore.exists()) throw new GradleException("No release keystore at $releaseKeystore: run tools/release-key.sh")
+                def password = keychainPassword()
+                if (password.isEmpty()) throw new GradleException('No keystore password in the Keychain: run tools/release-key.sh')
+                storePassword password
+                keyPassword password
+            }
+        }
+    }
+
+    buildTypes {
+        debug {
+            applicationIdSuffix '.debug'
+            resValue 'string', 'gateway_url', gatewayUrl('test-servers.local.properties')
+        }
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            resValue 'string', 'gateway_url', gatewayUrl('fetch.properties')
+            signingConfig signingConfigs.release
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    lint {
+        abortOnError true
+        checkReleaseBuilds true
+        warningsAsErrors true
+        // TVs use xhdpi; the banner and icons are drawn for it (tools/make_art.py).
+        disable 'IconMissingDensityFolder'
+    }
+}
+
+dependencies {
+    testImplementation 'junit:junit:4.13.2'
+    testImplementation 'org.json:json:20240303'
+}

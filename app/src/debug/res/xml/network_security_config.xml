@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Debug builds only: the same rules as release, plus trust in the throwaway test CA that signs the
+  local test gateway's certificate (tools/test-tls.sh). Release builds never contain this file.
+-->
+<network-security-config>
+    <base-config cleartextTrafficPermitted="false">
+        <trust-anchors>
+            <certificates src="system" />
+            <certificates src="@raw/test_ca" />
+        </trust-anchors>
+    </base-config>
+</network-security-config>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- The URL an ImageView is waiting for, so a late image never lands on a reused view. -->
+    <item name="poster_url" type="id" />
+</resources>

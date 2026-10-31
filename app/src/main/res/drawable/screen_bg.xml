@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Aged newsprint: lighter at the top, a faint red glow at the top left, and a halftone dot screen over it all. -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <gradient android:angle="270" android:startColor="@color/screen_top" android:endColor="@color/screen" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <gradient android:type="radial" android:gradientRadius="70%p" android:centerX="0.1" android:centerY="0.0"
+                android:startColor="@color/glow" android:endColor="#00C1121F" />
+        </shape>
+    </item>
+    <item>
+        <bitmap android:src="@drawable/halftone" android:tileMode="repeat" />
+    </item>
+</layer-list>

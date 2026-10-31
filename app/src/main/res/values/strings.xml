@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Rated Arr</string>
+
+    <!-- Search and home -->
+    <string name="search_hint">Search films and shows</string>
+    <string name="section_films">Films</string>
+    <string name="section_shows">Shows</string>
+    <string name="section_downloading">Downloading</string>
+    <string name="section_recent">Recently added</string>
+    <string name="section_recommended">Recommended for you</string>
+    <string name="section_trending">Trending films</string>
+    <string name="section_popular">Popular films</string>
+    <string name="section_because">Because you have %1$s</string>
+    <string name="section_trending_shows">Trending shows</string>
+    <string name="section_top_rated_shows">Top rated shows</string>
+    <string name="tmdb_credit">This product uses the TMDB API but is not endorsed or certified by TMDB.</string>
+    <string name="search_suggestion">Nothing matched exactly. Showing “%1$s”.</string>
+    <string name="genre_for_you">For you</string>
+    <string name="cast">Cast</string>
+    <string name="browse_so_bad">So bad it’s good</string>
+    <string name="browse_b_movies">B-movies</string>
+    <string name="browse_flops">Famous flops</string>
+    <string name="browse_popular">Popular</string>
+    <string name="browse_top_rated">Best rated</string>
+    <string name="section_person_films">Films with %1$s</string>
+    <string name="section_person_directed">Films by %1$s</string>
+    <string name="section_person_shows">Shows with %1$s</string>
+    <string name="downloads_done">Nothing of this is downloading any more.</string>
+    <string name="searching">Searching…</string>
+    <string name="nothing_found">Nothing found for “%1$s”.</string>
+    <string name="home_empty">Search for a film or show to add it.\nDownloads and new arrivals show up here.</string>
+    <string name="unavailable_films">Radarr isn’t answering, so films are missing.</string>
+    <string name="unavailable_shows">Sonarr isn’t answering, so shows are missing.</string>
+    <string name="badge_in_library">In library</string>
+    <string name="badge_downloaded">Ready</string>
+    <plurals name="episodes_count">
+        <item quantity="one">%d episode</item>
+        <item quantity="other">%d episodes</item>
+    </plurals>
+
+    <!-- Errors -->
+    <string name="error_offline">Can’t reach your seedbox. Check the TV’s internet connection.</string>
+    <string name="error_busy">Your seedbox is busy. Try again in a moment.</string>
+    <string name="error_server">Your seedbox had a problem (%1$s).</string>
+    <string name="error_rejected">Not added: %1$s</string>
+    <string name="error_not_found">This title isn’t available any more.</string>
+    <string name="not_configured">This build has no gateway address. Set gateway.url in fetch.properties and rebuild.</string>
+    <string name="retry">Try again</string>
+
+    <!-- Details -->
+    <string name="add_film">Add film</string>
+    <string name="download_all">Download all</string>
+    <string name="choose_episodes">Choose episodes…</string>
+    <string name="quality">Quality: %1$s</string>
+    <string name="quality_loading">Quality: loading…</string>
+    <string name="adding">Adding…</string>
+    <string name="deleting">Deleting…</string>
+    <string name="added_film">Added. Radarr is looking for the best download now.</string>
+    <string name="added_show">Added. Sonarr is looking for the episodes now.</string>
+    <string name="already_added">Already in your library.</string>
+    <string name="done">Done</string>
+
+    <!-- Library -->
+    <string name="tab_library">Library</string>
+    <string name="library_storage">Your seedbox</string>
+    <string name="library_problems">Needs attention</string>
+    <string name="library_films">Films · largest first</string>
+    <string name="library_shows">Shows · largest first</string>
+    <string name="library_problems_note">Plex can’t play disc images. Delete the file or remove the film.</string>
+    <string name="library_empty">Nothing is downloaded yet.</string>
+    <string name="delete_file">Delete file</string>
+    <string name="remove_film">Remove film</string>
+    <string name="remove_show">Remove show</string>
+    <string name="delete_episodes">Delete episodes…</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+    <string name="remove">Remove</string>
+    <string name="confirm_delete_file">Delete the file of “%1$s”?</string>
+    <string name="confirm_delete_file_body">%1$sRadarr won’t download it again. This can’t be undone.</string>
+    <string name="confirm_remove">Remove “%1$s” from your library?</string>
+    <string name="confirm_remove_body">%1$sIts files are deleted too. This can’t be undone.</string>
+    <!-- Quoted to keep the trailing space; the sentence after it follows directly. -->
+    <string name="confirm_frees">"This frees %1$s. "</string>
+    <string name="confirm_delete_episodes">Delete %1$s?</string>
+    <string name="confirm_delete_episodes_body">This frees %1$s. Sonarr won’t download them again. This can’t be undone.</string>
+    <string name="deleted_file">Deleted. %1$s freed.</string>
+    <string name="removed">Removed from your library. %1$s freed.</string>
+    <string name="deleted_episodes">Deleted. %1$s freed.</string>
+    <string name="pick_delete_subtitle">Pick episodes to delete. Only downloaded episodes can be picked.</string>
+    <string name="pick_delete_none">Pick episodes to delete</string>
+
+    <!-- Episode picker -->
+    <string name="pick_delete_title">Delete episodes of %1$s</string>
+    <string name="pick_subtitle">Choose what to download. OK toggles an episode, a season or everything.</string>
+    <string name="pick_all">All episodes</string>
+    <string name="pick_season_files">%1$s · %2$s</string>
+    <string name="pick_season">Season %1$d</string>
+    <string name="pick_specials">Specials</string>
+    <string name="pick_episode">%1$d · %2$s</string>
+    <string name="pick_episode_untitled">Episode %1$d</string>
+    <string name="pick_not_aired">Not aired yet</string>
+    <plurals name="pick_summary">
+        <item quantity="one">%1$d of %2$d episode picked</item>
+        <item quantity="other">%1$d of %2$d episodes picked</item>
+    </plurals>
+    <plurals name="pick_download">
+        <item quantity="one">Download %d episode</item>
+        <item quantity="other">Download %d episodes</item>
+    </plurals>
+    <string name="pick_download_none">Pick episodes</string>
+    <string name="pick_no_changes">No changes</string>
+    <plurals name="pick_delete">
+        <item quantity="one">Delete %d episode</item>
+        <item quantity="other">Delete %d episodes</item>
+    </plurals>
+    <plurals name="pick_delete_summary">
+        <item quantity="one">%1$d episode picked · %2$s</item>
+        <item quantity="other">%1$d episodes picked · %2$s</item>
+    </plurals>
+    <plurals name="pick_save">
+        <item quantity="one">Save · %d episode wanted</item>
+        <item quantity="other">Save · %d episodes wanted</item>
+    </plurals>
+    <string name="pick_no_episodes">No episodes are listed for this show yet.</string>
+
+    <!-- Pairing -->
+    <string name="pair_title">Pair this TV with your seedbox</string>
+    <string name="pair_body">On your Mac, run this and confirm the code:</string>
+    <string name="pair_command">tools/pair</string>
+    <string name="pair_waiting">Waiting for approval…</string>
+    <string name="pair_expires">The code changes in %1$s.</string>
+    <string name="pair_starting">Getting a code…</string>
+
+    <!-- Continue watching on the home screen -->
+    <string name="resume_failed">Plex couldn’t open this. Open it in Plex instead.</string>
+</resources>

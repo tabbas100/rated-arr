@@ -1,0 +1,48 @@
+<!-- @dsCard height=288 -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Cover</title><link rel="stylesheet" href="../../tokens.css"><link rel="stylesheet" href="../bundle.css"><script src="../../kit.js"></script>
+<style>
+  .cover { position: relative; width: 960px; height: 288px; overflow: hidden; background: var(--screen); }
+  .cover svg { position: absolute; inset: 0; }
+  .slab { fill: var(--surface-raised); }
+  .tile { rx: var(--radius-m); }
+  .t-accent { fill: var(--accent); }
+  .t-focus { fill: var(--focus); }
+  .t-ready { fill: var(--ready); }
+  .ring { fill: none; stroke: var(--focus); stroke-width: var(--focus-ring); rx: 15px; }
+  .pill { fill: var(--glass-selected); rx: 12px; }
+  .pill-on { fill: var(--focus); rx: 12px; }
+  .text { position: absolute; left: 40px; bottom: 32px; width: 440px; }
+  .name { font-family: var(--font-sans); font-weight: 600; font-size: 88px; line-height: .95; letter-spacing: -0.01em; color: var(--ink); margin: 0; }
+  .tagline { font-family: var(--font-sans); font-size: 14px; line-height: 20px; color: var(--ink-dim); margin: 8px 0 0; }
+</style>
+</head>
+<body>
+<div class="cover">
+  <!--
+    blocks: surface-raised slab 480 x 160 bleeding off the top and right; three poster tiles 96 x 144 (space-7 x 2, x 3) in accent, focus and ready.
+    arrangement: one wide slab with a row of poster tiles card-gap apart crossing its lower edge, the middle tile ringed like a focused card, the last bleeding off the right.
+    pattern: pills, because every control in this system is a pill (radius-pill) and chips sit in a row under the tabs: five pills, the chosen one in focus.
+    scales: card-gap 20, space-7 48, radius-m 12 on tiles, focus-ring 3 at a 6 offset, pills 24 high with rx 12.
+  -->
+  <svg width="960" height="288" viewBox="0 0 960 288" aria-hidden="true">
+    <rect class="slab" x="480" y="0" width="480" height="160"/>
+    <rect class="tile t-accent" x="528" y="48" width="96" height="144"/>
+    <rect class="ring" x="638" y="42" width="108" height="156"/>
+    <rect class="tile t-focus" x="644" y="48" width="96" height="144"/>
+    <rect class="tile t-ready" x="760" y="48" width="96" height="144"/>
+    <rect class="tile t-accent" x="876" y="48" width="96" height="144"/>
+    <rect class="pill" x="528" y="224" width="72" height="24"/>
+    <rect class="pill-on" x="608" y="224" width="112" height="24"/>
+    <rect class="pill" x="728" y="224" width="64" height="24"/>
+    <rect class="pill" x="800" y="224" width="80" height="24"/>
+    <rect class="pill" x="888" y="224" width="96" height="24"/>
+  </svg>
+  <div class="text">
+    <p class="name">Rated Arr<br>UI Kit</p>
+    <p class="tagline">Built for the couch: big type, one clear focus, posters first.</p>
+  </div>
+</div>
+</body>
+</html>

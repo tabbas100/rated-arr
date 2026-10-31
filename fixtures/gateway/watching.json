@@ -1,0 +1,14 @@
+{
+  "server": "0123456789abcdef0123456789abcdef01234567",
+  "items": [
+    {"kind": "film", "key": "1629", "showKey": "", "seasonKey": "", "title": "Hard Target", "episodeTitle": "", "season": 0, "episode": 0,
+     "position": 2575843, "duration": 5979008, "watchedAt": 1793132410,
+     "art": "https://image.tmdb.org/t/p/w300/4IRHnS9Ljvb4tGI2SGaSiQikcaE.jpg"},
+    {"kind": "episode", "key": "1730", "showKey": "1685", "seasonKey": "1686", "title": "Columbo", "episodeTitle": "The Greenhouse Jungle", "season": 2,
+     "episode": 2, "position": 183431, "duration": 4429964, "watchedAt": 1793132631,
+     "art": "https://image.tmdb.org/t/p/w300/ukf5T5gsTR55e30J7y8zKVInoD4.jpg"},
+    {"kind": "episode", "key": "1731", "showKey": "1685", "seasonKey": "1686", "title": "Columbo", "episodeTitle": "Dagger of the Mind", "season": 2,
+     "episode": 3, "position": 0, "duration": 4400000, "watchedAt": 1793132631, "art": ""},
+    {"kind": "film", "key": "", "title": "No key", "position": 1, "duration": 2, "watchedAt": 3, "art": ""}
+  ]
+}

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- One title: its backdrop behind a scrim, the poster, the details and the add buttons. -->
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/fanart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/scrim_detail" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:baselineAligned="false"
+        android:clipChildren="false"
+        android:orientation="horizontal"
+        android:paddingStart="64dp"
+        android:paddingTop="56dp"
+        android:paddingEnd="64dp">
+
+        <FrameLayout
+            android:id="@+id/posterFrame"
+            android:layout_width="208dp"
+            android:layout_height="312dp"
+            android:background="@drawable/poster_placeholder"
+            android:elevation="16dp">
+
+            <TextView
+                android:id="@+id/initials"
+                style="@style/Text"
+                android:layout_gravity="center"
+                android:textFontWeight="300"
+                android:textColor="@color/text_faint"
+                android:textSize="64sp" />
+
+            <ImageView
+                android:id="@+id/poster"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@null"
+                android:scaleType="centerCrop" />
+        </FrameLayout>
+
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="44dp"
+            android:layout_weight="1"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:paddingBottom="40dp"
+            android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title"
+                style="@style/Text.Display" />
+
+            <TextView
+                android:id="@+id/details"
+                style="@style/Text"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/text_dim"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/status"
+                style="@style/Text"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/badge_status"
+                android:textFontWeight="500"
+                android:paddingStart="14dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="14dp"
+                android:paddingBottom="5dp"
+                android:textColor="@color/ready"
+                android:textSize="13sp"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/progressRow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="220dp"
+                    android:layout_height="6dp"
+                    android:max="1000"
+                    android:progressDrawable="@drawable/progress_bar" />
+
+                <TextView
+                    android:id="@+id/progressText"
+                    style="@style/Text"
+                    android:layout_marginStart="14dp"
+                    android:textColor="@color/accent"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tagline"
+                style="@style/Text.Plot"
+                android:layout_width="match_parent"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/text_dim"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/overview"
+                style="@style/Text.Plot"
+                android:layout_width="match_parent"
+                android:layout_marginTop="18dp"
+                android:ellipsize="end"
+                android:lineSpacingExtra="5dp"
+                android:maxLines="5"
+                android:textColor="@color/text"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/credits"
+                style="@style/Text"
+                android:layout_width="match_parent"
+                android:layout_marginTop="12dp"
+                android:textColor="@color/text_dim"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/actions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:clipChildren="false"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:id="@+id/danger"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:clipChildren="false"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/quality"
+                style="@style/Button"
+                android:layout_height="38dp"
+                android:layout_marginTop="14dp"
+                android:paddingStart="18dp"
+                android:paddingEnd="18dp"
+                android:text="@string/quality_loading"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/feedback"
+                style="@style/Text"
+                android:layout_width="match_parent"
+                android:layout_marginTop="18dp"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/castTitle"
+                style="@style/Text.Section"
+                android:layout_marginTop="30dp"
+                android:text="@string/cast"
+                android:visibility="gone" />
+
+            <HorizontalScrollView
+                android:id="@+id/castScroll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:scrollbars="none"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/castRow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clipChildren="false"
+                    android:orientation="horizontal" />
+            </HorizontalScrollView>
+        </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</merge>

@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Makes the "Up to 1080p" quality profile in Radarr and Sonarr and stops every profile taking whole
+# Blu-ray disc images, which Plex cannot play. Each profile it changes is saved on the seedbox first, in
+# ~/.config/fetchd/backup; running it again changes nothing. Run tools/deploy-gateway.sh once before.
+set -euo pipefail
+
+cd "$(dirname "$0")/.."
+TARGET="$(grep '^ssh.target=' fetch.properties | cut -d= -f2-)"
+ssh "$TARGET" 'cd fetch && PYTHONPATH=$HOME/fetch python3 -P -s -m fetchd setup-profiles'

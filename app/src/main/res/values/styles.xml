@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Fetch" parent="android:Theme.Material.Light.NoActionBar.Fullscreen">
+        <item name="android:windowBackground">@drawable/screen_bg</item>
+        <item name="android:colorBackground">@color/screen</item>
+        <item name="android:colorAccent">@color/focus</item>
+        <item name="android:textColorHighlight">#59C1121F</item>
+        <item name="android:windowActivityTransitions">true</item>
+    </style>
+
+    <!-- The delete question: only its own paper card (layout/dialog_confirm) over the dimmed screen. -->
+    <style name="Theme.Fetch.Dialog" parent="android:Theme.Material.Light.Dialog.NoActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowMinWidthMajor">0%</item>
+        <item name="android:windowMinWidthMinor">0%</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+        <item name="android:colorAccent">@color/focus</item>
+    </style>
+
+    <!--
+      Three faces, as on a 70s poster: Anton (a condensed poster face, one weight) in capitals for titles,
+      headings, cards and controls; Courier Prime (a typewriter) for plots and small print; Outfit for the
+      rest, at the weights declared in font/outfit_family.
+    -->
+    <style name="Text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/outfit_family</item>
+        <item name="android:textFontWeight">400</item>
+        <item name="android:textColor">@color/text</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="Text.Wordmark">
+        <item name="android:fontFamily">@font/anton</item>
+        <item name="android:textFontWeight">400</item>
+        <item name="android:textColor">@color/focus</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:letterSpacing">0.05</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="Text.Section">
+        <item name="android:fontFamily">@font/anton</item>
+        <item name="android:textFontWeight">400</item>
+        <item name="android:textColor">@color/text</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:letterSpacing">0.08</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="Text.CardTitle">
+        <item name="android:fontFamily">@font/anton</item>
+        <item name="android:textFontWeight">400</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:letterSpacing">0.03</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="Text.CardLine">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:fontFamily">@font/courier_prime</item>
+        <item name="android:textColor">@color/text_faint</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="Text.Title">
+        <item name="android:fontFamily">@font/anton</item>
+        <item name="android:textFontWeight">400</item>
+        <item name="android:textSize">32sp</item>
+        <item name="android:letterSpacing">0.03</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <!-- A title page's title: the poster's headline, in red. -->
+    <style name="Text.Display" parent="Text.Title">
+        <item name="android:textColor">@color/focus</item>
+        <item name="android:textSize">38sp</item>
+    </style>
+
+    <!-- A plot or tagline: typed, like the copy on a lobby card. -->
+    <style name="Text.Plot">
+        <item name="android:fontFamily">@font/courier_prime</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="Text.Message">
+        <item name="android:fontFamily">@font/courier_prime</item>
+        <item name="android:textColor">@color/text_dim</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:lineSpacingExtra">4dp</item>
+    </style>
+
+    <!-- The Films / Shows / Library tabs on home. -->
+    <style name="Tab">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_marginEnd">10dp</item>
+        <item name="android:paddingStart">20dp</item>
+        <item name="android:paddingEnd">20dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/tab_bg</item>
+        <item name="android:textColor">@color/tab_text</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily">@font/anton</item>
+        <item name="android:textFontWeight">400</item>
+        <item name="android:letterSpacing">0.06</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <!-- A genre chip: a smaller tab. -->
+    <style name="Chip" parent="Tab">
+        <item name="android:layout_height">36dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- Buttons: ink-outlined at rest; focused, a red block that lifts off the page on a hard ink shadow. -->
+    <style name="Button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_marginEnd">12dp</item>
+        <item name="android:paddingStart">20dp</item>
+        <item name="android:paddingEnd">20dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/button_bg</item>
+        <item name="android:textColor">@color/button_text</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily">@font/anton</item>
+        <item name="android:textFontWeight">400</item>
+        <item name="android:letterSpacing">0.05</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+    </style>
+</resources>

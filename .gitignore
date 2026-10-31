@@ -1,0 +1,12 @@
+# Your own settings and keys: fetch.properties.example shows what goes in fetch.properties.
+fetch.properties
+*.local.properties
+local.properties
+.local/
+# Made by tools/test-tls.sh for debug builds; its private key stays in .local/.
+app/src/debug/res/raw/test_ca.pem
+*.log
+build/
+.gradle/
+__pycache__/
+.DS_Store

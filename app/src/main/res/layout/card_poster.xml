@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- A film or show: the poster with a focus ring and an "In library" badge, the title and a line under it. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="136dp"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="18dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/posterFrame"
+        android:layout_width="136dp"
+        android:layout_height="204dp"
+        android:background="@drawable/poster_placeholder"
+        android:duplicateParentState="true"
+        android:foreground="@drawable/focus_ring"
+        android:stateListAnimator="@animator/poster_tilt">
+
+        <TextView
+            android:id="@+id/initials"
+            style="@style/Text"
+            android:layout_gravity="center"
+            android:textFontWeight="300"
+            android:textColor="@color/text_faint"
+            android:textSize="44sp" />
+
+        <ImageView
+            android:id="@+id/poster"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@null"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/badge"
+            style="@style/Text"
+            android:layout_height="22dp"
+            android:layout_gravity="bottom|start"
+            android:layout_margin="8dp"
+            android:background="@drawable/badge_library"
+            android:drawableStart="@drawable/ic_check"
+            android:drawablePadding="3dp"
+            android:fontFamily="@font/anton"
+            android:textFontWeight="400"
+            android:gravity="center"
+            android:paddingStart="7dp"
+            android:paddingEnd="9dp"
+            android:rotation="-6"
+            android:text="@string/badge_in_library"
+            android:textAllCaps="true"
+            android:textColor="@color/on_focus"
+            android:textSize="12sp"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/cardTitle"
+        style="@style/Text.CardTitle"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/cardLine"
+        style="@style/Text.CardLine"
+        android:layout_marginTop="2dp" />
+</LinearLayout>

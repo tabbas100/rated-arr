@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The delete question (Confirm): the title, what it frees, then Cancel and the red action. The extra
+     padding on the right and bottom is the card's shadow in dialog_bg. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="520dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_bg"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:orientation="vertical"
+    android:paddingStart="28dp"
+    android:paddingTop="24dp"
+    android:paddingEnd="34dp"
+    android:paddingBottom="30dp">
+
+    <TextView
+        android:id="@+id/confirmTitle"
+        style="@style/Text.Title"
+        android:layout_width="match_parent"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/confirmBody"
+        style="@style/Text.Plot"
+        android:layout_width="match_parent"
+        android:layout_marginTop="12dp"
+        android:lineSpacingExtra="4dp"
+        android:textColor="@color/text_dim" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:clipChildren="false"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/confirmCancel"
+            style="@style/Button"
+            android:text="@string/cancel" />
+
+        <TextView
+            android:id="@+id/confirmAction"
+            style="@style/Button"
+            android:layout_marginEnd="0dp"
+            android:textColor="@color/danger_text" />
+    </LinearLayout>
+</LinearLayout>
